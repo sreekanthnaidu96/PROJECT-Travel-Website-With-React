@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+:root {
+  --primary: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+.home,
+.error,
+.services,
+.tours,
+.sign-up {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+.services {
+  background: url("./images/Mainsectionbg.jpg") center center/cover no-repeat;
+  color: var(--primary);
+  font-size: 75px;
+}
+.tours {
+  background: url("../src/images/products.jpg") center center/cover no-repeat;
+  color: var(--primary);
+  font-size: 100px;
+}
+.sign-up {
+  background: url("../src/images/signup.jpg") center center/cover no-repeat;
+  color: var(--primary);
+  font-size: 100px;
+}
+/* Button Styles */
+
+.btn {
+  padding: 8px 20px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.btn_primary {
+  background-color: var(--primary);
+  color: #242424;
+  border: 1px solid var(--primary);
+}
+.btn_outline {
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  transition: all 0.4s ease-in-out;
+}
+.btn_medium {
+  font-size: 20px;
+}
+.btn_large {
+  padding: 12px 26px;
+  font-size: 20px;
+}
+.btn_large:hover,
+.btn_medium:hover {
+  background-color: var(--primary);
+  color: #242424;
+  transition: all 0.4s ease-in-out;
+}
